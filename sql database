@@ -1,0 +1,20 @@
+create database if not exists access;
+use access;
+
+drop table if exists students_acess;
+
+create table if not exists students_acess(
+	id int(11) default null,
+	first_name varchar(64) default null,
+    last_name varchar(64) default null,
+    position varchar(64) default null,
+     authorized boolean default false,
+	 ac_date date default null
+	
+)ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
+
+insert into students_acess(id, first_name,last_name , position, authorized, ac_date)
+values(93444523, 'john', 'doe', 'student', true, '2001-03-01' );
+
+insert into students_acess(id, first_name,last_name , position, authorized, ac_datestudents_acess)
+values(93434523, 'mike', 'long', 'janitor', false, '2002-09-01' );
